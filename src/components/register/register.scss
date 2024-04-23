@@ -1,0 +1,144 @@
+section.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background: url('https://www.exoticindiaart.com/images/products/original/madhuban/pv60.webp') no-repeat center center/cover;
+
+    main {
+        width: 350px;
+        height: 350px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.827);
+        position: relative;
+        overflow: hidden;
+
+        .top {
+            display: flex;
+            width: 200%;
+            transform: translateX(0%);
+
+            &.active {
+                transform: translateX(-50%);
+            }
+
+            .signup, .login {
+                width: 100%;
+                position: relative;
+                background-color: white;
+                height: 300px;
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                * {
+                    display: block;
+                }
+
+                input {
+                    width: 80%;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid #333;
+                    padding: 5px 0;
+                    font-size: 15px;
+                    &[type='file'] {
+                        display: none;
+                    }
+                }
+
+                button {
+                    width: 80%;
+                    height: 40px;
+                    margin: 10px 0;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: #333;
+                    color: white;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #555;
+                    }
+                }
+
+                label {
+                    width: 80%;
+                    margin-top: 10px;
+                    position: relative;
+                    cursor: pointer;
+
+                    span {
+                        color: #333;
+                    }
+
+                    img {
+                        width: 75px;
+                        height: 75px;
+                        border-radius: 50%;
+                        position: relative;
+                    }
+
+                    &[for='file'] {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &::before {
+                            content: '⤒';
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 75px;
+                            height: 75px;
+                            font-size: 50px;
+                            color: rgb(255, 255, 255);
+                            cursor: pointer;
+                            z-index: 10;
+                            opacity: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-shadow: 0 0 5px rgb(0, 0, 0);
+                        }
+
+                        &:hover {
+                            &::before {
+                                opacity: 1;
+                            }
+
+                            img {
+                                filter: grayscale(100%) blur(2px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            display: flex;
+            width: 100%;
+            height: 50px;
+            align-items: center;
+            button {
+                width: 100%;
+                height: 100%;
+                background-color: rgb(241, 241, 241);
+                border: none;
+                font-size: 16px;
+                font-weight: 900;
+                &:hover,
+                &.active {
+                    background-color: rgb(207, 220, 61);
+                }
+            }
+        }
+    }
+}

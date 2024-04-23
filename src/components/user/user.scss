@@ -1,0 +1,201 @@
+section.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background: url('https://www.pinkparachuters.com/work/TNI/wp-content/uploads/2014/05/indian_background4.jpg') no-repeat center center/cover;
+
+    main {
+        width: 350px;
+        height: 500px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.827);
+        position: relative;
+        overflow: hidden;
+
+        .top {
+            display: flex;
+            width: 200%;
+            transform: translateX(0%);
+            &.active {
+                transform: translateX(-50%);
+            }
+
+            .profile,
+            .update {
+                width: 100%;
+                position: relative;
+                background-color: white;
+                height: 450px;
+            }
+
+            .profile {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                img.banner {
+                    width: 100%;
+                    height: 200px;
+                    border-radius: 5px 0 0 5px;
+                    object-fit: cover;
+                }
+
+                img.profileImg {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    border: 5px solid #fff;
+                    position: absolute;
+                    top: 150px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                h3 {
+                    margin-top: 75px;
+                    font-size: 20px;
+                    color: #333;
+                }
+
+                button {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    padding: 10px 40px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: #333;
+                    color: white;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #555;
+                    }
+                }
+                h4{
+                    margin-top: 10px;
+                    font-size: 15px;
+                    color: #333;
+                    cursor: pointer;
+                    &:hover{
+                        color: #008ecc
+                    }
+                }
+            }
+
+            .update {
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                * {
+                    display: block;
+                }
+
+                input {
+                    width: 80%;
+                    border: none;
+                    border-bottom: 1px solid #333;
+                    outline: none;
+                    font-size: 15px;
+                    padding: 5px 0;
+
+                    &[type='file'] {
+                        display: none;
+                    }
+                }
+
+                button {
+                    width: 80%;
+                    height: 40px;
+                    margin: 10px 0;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: #333;
+                    color: white;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #555;
+                    }
+                }
+
+                label {
+                    width: 80%;
+                    margin-top: 10px;
+                    position: relative;
+                    cursor: pointer;
+
+                    span {
+                        color: #333;
+                    }
+
+                    img {
+                        width: 75px;
+                        height: 75px;
+                        border-radius: 50%;
+                        position: relative;
+                    }
+
+                    &[for='file'] {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &::before {
+                            content: '⤒';
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 75px;
+                            height: 75px;
+                            font-size: 50px;
+                            color: rgb(255, 255, 255);
+                            cursor: pointer;
+                            z-index: 10;
+                            opacity: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-shadow: 0 0 5px rgb(0, 0, 0);
+                        }
+
+                        &:hover {
+                            &::before {
+                                opacity: 1;
+                            }
+
+                            img {
+                                filter: grayscale(100%) blur(2px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            display: flex;
+            width: 100%;
+            height: 50px;
+            align-items: center;
+            button {
+                width: 100%;
+                height: 100%;
+                background-color: rgb(241, 241, 241);
+                border: none;
+                &:hover,
+                &.active {
+                    background-color: rgb(207, 220, 61);
+                }
+            }
+        }
+    }
+}

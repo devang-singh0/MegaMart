@@ -1,0 +1,10 @@
+{
+    "editor.tokenColorCustomizations": {
+        "comments": "",
+        "textMateRules": []
+    },
+    "cSpell.words": [
+        "atleast",
+        "RAZORPAY"
+    ]
+}
