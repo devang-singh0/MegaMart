@@ -1,4 +1,12 @@
 
+## 🔗 Important Links
+[![LIVE AT](https://img.shields.io/badge/LIVE_AT-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://megamart-1.vercel.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/devang-singh-b29353255/)
+[![PORTFOLIO](https://img.shields.io/badge/portfolio-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://devang-singh0.github.io/portfolio)
+
+
+
+
 # MegaMart - Online Shopping Platform
 
 MegaMart is an online shopping platform built with React, Redux Toolkit, and a MongoDB backend powered by Node.js and Express. This platform allows users to browse through a wide range of products, add them to their cart, and make purchases securely.
@@ -43,12 +51,6 @@ The frontend code for MegaMart is available in the [megamart](https://github.com
 ## Server
 
 The server-side code for MegaMart is available in the [megamart-server](https://github.com/devang-singh0/megamart-server) repository. This repository contains the Node.js and Express server code, along with the MongoDB database configuration and API endpoints for handling requests from the frontend.
-
-
-## 🔗 Important Links
-[![LIVE AT](https://img.shields.io/badge/LIVE_AT-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://megamart-1.vercel.app/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/devang-singh-b29353255/)
-[![PORTFOLIO](https://img.shields.io/badge/portfolio-1DA1F2?style=for-the-badge&logo=github&logoColor=white)]()
 
 
 ## Authors
