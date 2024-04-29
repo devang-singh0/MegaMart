@@ -93,3 +93,8 @@ To run this project, you will need to add the following environment variables to
 
 `REACT_APP_RAZORPAY_KEY_ID=USE_YOUR_RAZORPAY_ID`
 
+
+## Author
+
+This project is maintained by [Devang Singh](https://github.com/devang-singh0).
+
